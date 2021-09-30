@@ -1,0 +1,292 @@
+*{  
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-size: 1rem;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+.container{
+    width: 1160px;
+    margin: auto;
+    
+}
+
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    
+    
+}
+
+.nav-logo{
+    width: 50%;
+    margin-left: 1.5rem;
+}
+
+.nav-menu{
+    width: 37%;
+    display: flex;
+}
+
+ul li{
+display: inline-block;
+margin-left: 1.3rem;
+list-style: none;
+}
+
+a{
+    text-decoration: none;
+    padding: 0.75rem;
+    color:white;
+    
+}
+
+
+/*comment*/
+
+.top-section{
+    width: 100%;
+   display: flex;
+   padding: 2rem 0;
+}
+
+.top-half{
+    width: 40%; 
+    
+     padding: 3%;
+    
+    
+    
+}
+
+.top-half img{
+    width: 100%;
+    background-color: red;
+    border-radius: 10%;
+    
+}
+.about{
+    width: 100%;
+    display: flex;  
+    background: url('./images/7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 0;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+    
+}
+ h1 span{
+    font-weight: 500;
+    font-size: 2.1rem;
+    color: orangered;
+    margin-top: 0.75rem; 
+}
+
+
+
+p{
+    margin-bottom: 2rem;
+    color:gray;
+    
+}
+
+
+.recipie-section{
+    text-align: center;
+    padding:2rem 0;
+}
+
+.food-section{
+display: flex;
+justify-content: space-between;
+}
+
+.food-div{
+    width: 30%;
+    margin-left: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.7rem lightgray;
+    border-radius: 0.7rem;
+    padding: 1.3rem;
+}
+.food-div img{
+    width: 100%;
+
+   
+}
+
+.button{
+    text-decoration: none;
+    border: 1px solid tomato;
+    border-radius: 0.7rem;
+    padding: 0.45rem 2rem;
+    background-image: linear-gradient(180deg,orange,orangered);
+    color: white;
+}
+
+
+
+
+
+.client-section{
+    width: 100%;
+    text-align: center;
+    padding-top: 3rem;
+    
+}
+
+.client-review{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.3rem;
+}
+.client img{
+    width: 80%;
+}
+.review{
+border-radius: 0.7rem;
+padding: 1.3rem;
+width: 80%;
+box-shadow:0.5rem 0.5rem 0.7rem whitesmoke
+}
+
+.quote{
+    font-size: 2rem;
+    color: red;
+}
+
+.social{
+   display: flex;
+   padding-top: 2rem;
+   justify-content: center;
+   align-items: center;
+   padding: 2.5rem 0;
+}
+
+.social-div{
+    width: 30%;
+    padding: 2rem;
+    text-align: center;
+}
+.social-div img{
+    width: 20%;
+
+   
+}
+.social-icon{
+    text-align: center;
+}
+.social-icon img{
+    width: 50%;
+    
+}
+.text-red{
+    color: orangered;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.text-blue{
+    color: darkblue;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+
+
+.footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 9.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 span{
+    font-weight: 500;
+    color: orangered;
+    
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+/* *************** */
+/* media query */
+/* ************** */
+@media (min-width:300px) and (max-width:768px){
+    .container{
+        max-width: 100%;
+        /* flex-wrap: wrap; */
+    }
+    .navbar{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .top-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .about{
+        flex-direction: column;
+    }
+    .food-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .social{
+        flex-direction: column;
+    }
+    .food-div{
+        max-width: 100%;
+        margin-top: 2rem;
+        padding: 0rem 1.5rem;
+    }
+    .food-div img{
+        max-width: 100%;
+    }
+    .top-half{
+        max-width: 100%;
+    }
+    .top-half img{
+        max-width: 100%;
+    }
+    .nav-menu ul li{
+        display: block;
+    }
+    html{
+        font-size: 0.75rem !important;
+    }
+    .client-review{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.3rem;
+    }
+}
